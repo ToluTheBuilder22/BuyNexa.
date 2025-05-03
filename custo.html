@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Reviews</title>
+  <link rel="stylesheet" href="script.js" />
+</head>
+<body>
+  <div class="review-container">
+    <h1>Customer Reviews</h1>
+
+    <form id="review-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+
+      <select id="country" required>
+        <option value="">Select your country</option>
+        <!-- Countries will be added dynamically by JS -->
+      </select>
+
+      <select id="rating" required>
+        <option value="">Rate the product</option>
+        <option value="5">★★★★★ - Excellent</option>
+        <option value="4">★★★★ - Good</option>
+        <option value="3">★★★ - Average</option>
+        <option value="2">★★ - Poor</option>
+        <option value="1">★ - Terrible</option>
+      </select>
+
+      <textarea id="comment" rows="4" placeholder="Write your review..." required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+
+    <div id="reviews-list">
+      <h2>All Reviews</h2>
+      <!-- Reviews will be displayed here -->
+    </div>
+  </div>
+
+  <script src="custo.js"></script>
+</body>
+</html>
